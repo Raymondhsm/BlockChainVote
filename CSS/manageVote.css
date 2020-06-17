@@ -1,0 +1,325 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    position: relative;
+    top:0;
+}
+
+.option
+{
+    width:15%;
+    height: 100%;
+    float: left;
+    border-right: 1px solid gainsboro;
+}
+
+.left-option
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+.left-button
+{
+    width: 100%;
+    height: 25px;
+    background-color: rgba(226, 226, 226, 0.5);
+    padding: 8px 0;
+    margin: 2px 0;
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+} 
+
+
+.page
+{
+    width: 84%;
+    height: 90%;
+    float: left;
+}
+
+.info-div
+{
+    width: 90%;
+    height:330px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.list-div
+{
+    width: 80%;
+    height: 50px;
+    margin: 5px auto;
+    background-color: rgba(226, 226, 226, 0.5);
+    border-radius: 5px;
+}
+
+.label
+{
+    width: 25%;
+    height: 30px;
+    float: left;
+    text-align: center;
+    margin: 10px 0 10px 30px;
+}
+
+.input-textarea
+{
+    width: 60%;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+    padding-left: 5%;
+    border-radius: 5px;
+    border: 1px solid rgb(223, 221, 221);
+    font-size: 18px;
+    resize: none;
+    overflow: hidden;
+    outline: none;
+}
+
+.button-div
+{
+    width: 80%;
+    margin: 10%;
+}
+
+button
+{
+    box-sizing: inherit;
+    color: hsl(0, 0%, 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 10px;
+    margin: 0;
+    word-break: inherit;
+}
+
+
+.button-ok
+{
+    width: 100px;
+    height: 30px;
+    float: left;
+    margin-left: 30%;
+    background-color: rgba(129, 255, 117, 0.8);
+    border: .3px solid rgba(129, 255, 117, 0.8);
+}
+
+.button-reset
+{
+    width: 100px;
+    height: 30px;
+    float: left;
+    margin-left: 20px;
+    background-color: hsla(0, 82%, 82%, .8);
+    border: .3px solid hsla(0, 82%, 82%, .8);
+}
+
+.status-option
+{
+    width: 100%;
+    height: 50px;
+}
+
+.top-option
+{
+    width: 90%;
+    height: 100%;
+    list-style-type:none;
+    padding: 0;
+    margin:0 7%;
+    border-bottom: 1px solid gainsboro;
+}
+
+.top-li
+{
+    width: 33.1%;
+    float:left;
+    border-right: 1px solid white;
+}
+
+.top-button
+{
+    width: 100%;
+    height: 25px;
+    background-color: white;
+    padding: 8px 0;
+    margin: 2px 0;
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-right: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+    outline: none;
+}
+
+.ul-div
+{
+    width: 100%;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.list-ul
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+.list-li
+{
+    width: 80%;
+    height: 40px;
+    margin: 5px 10%;
+    border-radius: 10px;
+    background-color: rgba(226, 226, 226, 0.5);
+}
+
+.label-div
+{
+    width: 60%;
+    height: 34px;
+    display: inline-block;
+    padding: 3px 0 3px 5%;
+}
+
+.name-label
+{
+    width: 80px;
+    height: 15px;
+    float: left;
+}
+
+.id-label
+{
+    width: 100px;
+    height: 15px;
+    float: left;
+}
+
+.address-label
+{
+    width: 100%;
+    height: 8px;
+    font-size: 3px;
+}
+
+.decide-div
+{
+    float: right;
+    width: 30%;
+    height: 30px;
+    padding-top: 7.5px;
+}
+
+.btnAccept
+{
+    width: 30%;
+    height: 23px;
+    float: right;
+    margin-right: 10%;
+    background-color: rgba(129, 255, 117, 0.8);
+    border: .3px solid rgba(129, 255, 117, 0.8);
+}
+
+.btnReject
+{
+    width: 30%;
+    height: 23px;
+    float: right;
+    margin-right: 10%;
+    background-color: rgba(160, 160, 160, 0.8);
+    border: .3px solid rgba(160, 160, 160, 0.8);
+}
+
+.next-page
+{
+    height: 30px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+}
+
+.btnPre,.btnNext
+{
+    width: 16px;
+    height: 20px;
+    float: left;
+    background-color: gainsboro;
+    border: .3px solid gainsboro;
+}
+
+.curr-page
+{
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-left: 8px;
+    border-radius: 3px;
+    overflow: hidden;
+    resize: none;
+    outline: none;
+}
+
+.total-page
+{
+    width: 40px;
+    height: 30px;
+    float: left;
+}
+
+.select-div
+{
+    width: 84%;
+    height: 10%;
+    margin: 0;
+}
+
+.vote-select
+{
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+.btnType-default
+{
+    width: 30%;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+    background-color: white;
+    border: .3px solid white;
+}
+
+.btnType-choose
+{
+    width: 30%;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+    background-color: rgb(102, 156, 255);;
+    border: .3px solid rgb(102, 156, 255);
+}

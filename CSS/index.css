@@ -1,0 +1,246 @@
+html,body {
+    width: 100%;
+    height: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    min-width: 300px;
+}
+
+.header
+{
+    position: fixed; /*固定*/
+    z-index:2008;
+    top:0px;
+
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border-bottom: 1px solid gainsboro;
+    box-shadow: 0 1px 4px gainsboro;
+}
+
+ul
+{
+    list-style-type:none;
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+li
+{
+    height: 100%;
+    float:left;
+    border-right: 1px solid white;
+}
+
+.header-option
+{
+    width: 150px;
+    height: 63%;
+    color: #555;
+    padding: 5% 0;
+    font-size: 20px;
+}
+
+.header-option:link,.header-option:visited
+{
+    display:block;
+    font-weight:bold;
+    text-align:center;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+
+.header-option:hover,.header-option:active
+{
+    background-color:#cfcfcf;
+}
+
+.name-text
+{
+    width: 250px;
+    height: 90%;
+    color: #555;
+    float: right;
+    margin-top: 5px;
+    cursor: unset;
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.index-div
+{
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+}
+
+.frame-div
+{
+    float: left;
+    margin-left: 50px;
+    width: 70%;
+    height: 100%;
+}
+
+.setup-div
+{
+    float: left;
+    display: block;
+    margin-left: 20px;
+    width: 21%;
+    height: 100%;
+    background-color: white;
+    border-left: 1px solid gainsboro;
+}
+
+.list{
+    width: 100%;
+    height: 30px;
+
+    display: inline-block;
+    position: relative;
+    color: #888;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: helvetica, arial, sans-serif;
+    border-radius: 4px;
+    border: 1px solid #bcbcbc;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    background-image: -webkit-linear-gradient(top, #fff 0%, #efefef 60%, #e1dfe2 100%);
+    background-image: -moz-linear-gradient(top, #fff 0%, #efefef 60%, #e1dfe2 100%);
+    background-image: -o-linear-gradient(top, #fff 0%, #efefef 60%, #e1dfe2 100%);
+    background-image: -ms-linear-gradient(top, #fff 0%, #efefef 60%, #e1dfe2 100%);
+    background-image: linear-gradient(top, #fff 0%, #efefef 60%, #e1dfe2 100%);
+}
+
+.list:hover {
+    color: #555;
+}
+
+.iframe
+{
+    width: 99%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    overflow: hidden;
+}
+
+.setup-list
+{
+    width: 90%;
+    margin: 5px 5% 5px 8%;
+    padding: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.setup-label
+{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.port-textarea
+{
+    width: 80%;
+    height: 18px;
+    font-size: 13px;
+    border-radius: 3px;
+    resize: none;
+    overflow: hidden;
+}
+
+.status-img
+{
+    width: 18px;
+    margin: 3px;
+}
+
+.account-select
+{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+
+.input-pwd
+{
+    width: 80%;
+    height: 18px;
+    float: left;
+    padding-left: 5px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    outline: none;
+}
+
+button
+{
+    box-sizing: inherit;
+    color: hsl(0, 0%, 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 10px;
+    margin: 0;
+    word-break: inherit;
+}
+
+.btnPort
+{
+    width: 100px;
+    height: 20px;
+    margin: 0 auto;
+    background-color: rgba(0, 247, 255, 0.5);
+    border: .3px solid rgba(0, 247, 255, 0.5);
+}
+
+.btnType-default
+{
+    width: 40%;
+    height: 20px;
+    background-color: white;
+    border: 1px solid rgb(102, 156, 255);
+}
+
+.btnType-choose
+{
+    width: 40%;
+    height: 20px;
+    background-color: rgb(102, 156, 255);
+    border: 1px solid rgb(102, 156, 255);
+}
+
+.info-title
+{
+    width: 100%;
+    margin: 5px 0 0 5px;
+    font-size: 10px;
+    color: grey;
+}
+
+.info-content
+{
+    width: 100%;
+    margin: 5px 0 0 5px;
+    font-size: 13px;
+}

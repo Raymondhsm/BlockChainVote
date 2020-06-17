@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>区块链电子投票系统</title>
+    <link rel="icon" type="image/png" sizes="144x144" href="Image/icon.png"/>
+
+    <link rel="stylesheet" href="CSS/index.css" type="text/css">
+ 
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./JS/web3.min.js"></script>
+    <script src="./JS/Config.js"></script>
+    <script src="./JS/Utils.js"></script>
+    <script src="./JS/Index.js"></script>
+</head>
+<body class="body">
+    <div class="header">
+        <ul>
+            <li><a class="header-option" href="javascript:jump(0)">创建投票</a></li>
+            <li><a class="header-option" href="javascript:jump(1)">管理投票</a></li>
+            <li><a class="header-option" href="javascript:jump(2)">投票选举</a></li>
+            <li><a class="header-option" href="javascript:jump(3)">查看结果</a></li>
+            <li class="name-text">BlockChain Vote</li>
+        </ul>
+    </div>
+    <div class="index-div">
+
+        <div class="frame-div" >
+            <iframe id="iframe" class="iframe">
+
+            </iframe>
+        </div>
+
+        <div class="setup-div">
+            <div class="setup-list">
+                <label class="setup-label" >站点：</label>
+                <textarea class="port-textarea" id="address" placeholder="ws://47.107.128.150:8546"></textarea>
+                <img src="./Image/loading.png" class="status-img" id="status">
+                <button class="btnPort" id="btnConnect" style="margin-top:10px;" onclick="setWeb3()">创建</button>
+            </div>
+            <div class="setup-list">
+                <label class="setup-label">账号：</label>
+                <select class="account-select" id="account" onchange="accountOnchange(this)">
+                </select>
+                <label class="setup-label">密码：</label>
+                <div style="width: 100%;height:20px;margin-bottom: 15px;">
+                    <input type="password" class="input-pwd" id="password" />
+                    <img class="status-img" id="account-status" style="float: left;margin-left: 6px;" />
+                </div>
+                <button class="btnPort" id="btnUnlock">解锁</button>
+            </div>
+            <div class="setup-list">
+                <p class="setup-label">角色：</p>
+                <button class="btnType-choose" name="btnType" onclick="ChooseType(0)" style="border-radius: 5px 0 0 5px; float: left;">个人用户</button>
+                <button class="btnType-default" name="btnType" onclick="ChooseType(1)" style="border-radius: 0 5px 5px 0;margin-top: 5px;">管理员</button>
+            </div>
+            <div class="setup-list">
+                <p class="info-title">名称：</p>
+                <p class="info-content" id="voteName"></p>
+                <p class="info-title">类型：</p>
+                <p class="info-content" id="voteType"></p>
+                <p class="info-title">注册截止时间：</p>
+                <p class="info-content" id="voteRTime"></p>
+                <p class="info-title">投票开始时间：</p>
+                <p class="info-content" id="voteSTime"></p>
+                <p class="info-title">投票截止时间：</p>
+                <p class="info-content" id="voteETime"></p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    init();
+</script>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../CSS/manageVote.css" type="text/css">
+    <script src="../JS/Utils.js"></script>
+    <script src="../JS/ManageVote.js"></script>
+</head>
+<body>
+    <div class="option">
+        <ul class="left-option">
+            <li><button class="left-button" onclick="LeftOption(0)">投票信息</button></li>
+            <li><button class="left-button" onclick="LeftOption(1)">候选人管理</button></li>
+            <li><button class="left-button" onclick="LeftOption(2)">投票者管理</button></li>
+        </ul>
+    </div>
+    <div class="select-div">
+        <select class="vote-select" id="voteSelect" id="voteSelect" onchange="OnSelectChange(this.options[this.selectedIndex].value)"></select>
+    </div>
+    <div class="page" id="infoPage">
+        <div class="info-div">
+            <div class="list-div">
+                <p class="label">投票选举名称：</p>
+                <input class="input-textarea" id="infoName" style="font-size: 15px;"></input>
+            </div>
+            <div class="list-div">
+                <p class="label">注册截止时间：</p>
+                <input type="datetime-local" class="input-textarea" id="infoRTime">
+            </div>
+            <div class="list-div">
+                <p class="label">投票开始时间：</p>
+                <input type="datetime-local" class="input-textarea" id="infoSTime">
+            </div>
+            <div class="list-div">
+                <p class="label">投票截止时间：</p>
+                <input type="datetime-local" class="input-textarea" id="infoETime">
+            </div>
+            <div class="list-div">
+                <p class="label">类型：</p>
+                <button class="btnType-choose" name="btnType" onclick="ChooseType(0)" style="border-radius: 5px 0 0 5px;">私有</button>
+                <button class="btnType-default" name="btnType" onclick="ChooseType(1)" style="border-radius: 0 5px 5px 0;">公开</button>
+            </div>
+            <div class="list-div">
+                <p class="label">索引号：</p>
+                <input class="input-textarea" id="infoIndex" disabled>
+            </div>
+            <div class="list-div">
+                <p class="label">地址：</p>
+                <input class="input-textarea" id="infoAddr" disabled style="font-size: 8px;">
+            </div>
+        </div>
+        <div class="button-div">
+            <button class="button-ok" onclick="ModifyInfo()">修改</button>
+            <button class="button-reset" onclick="ResetInfo()">重置</button>
+        </div>
+    </div>
+    <div class="page" id="readPage" style="display: none;">
+        <div class="status-option">
+            <ul class="top-option">
+                <li class="top-li">
+                    <button class="top-button" name="btnTop" onclick="TopOption(0)">待审批</button></li>
+                <li class="top-li">
+                    <button class="top-button" name="btnTop" onclick="TopOption(1)">已通过</button></li>
+                <li class="top-li">
+                    <button class="top-button" name="btnTop" onclick="TopOption(2)">未通过</button></li>
+            </ul>
+        </div>
+        <div class="ul-div">
+            <ul class="list-ul" id="list-ul">
+            </ul>
+        </div>
+        <div class="next-page">
+            <button class="btnPre" id="btnPre" onclick="PrePage()"><</button>
+            <textarea class="curr-page" id="txtCP"></textarea>
+            <label class="total-page" id="labelTP"></label>
+            <button class="btnNext" id="btnNext" onclick="NextPage()">></button>
+        </div>
+    </div>
+</body>
+
+<script>
+    OwnVote();
+</script>
+
+</html>

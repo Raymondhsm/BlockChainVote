@@ -1,0 +1,232 @@
+html,body {
+    width: 100%;
+    height: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+.search
+{
+    width: 60%;
+    height: 25px;
+    margin: 20px 10% 20px 27%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.search-select
+{
+    width: 15%;
+    height: 100%;
+    float: left;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border-right: 1px solid gainsboro;
+    margin-left: 2px;
+}
+
+.textarea-search
+{
+    width: 75%;
+    height: 80%;
+    margin: 0;
+    padding: 2px 0 0 3%;
+    border: none;
+    border-radius: 10px;
+    font-size: 13px;
+    resize: none;
+    overflow: hidden;
+    outline: none;
+}
+
+.img-search
+{
+    float: right;
+    width: 5%;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.vote-info
+{
+    width: 100%;
+}
+
+.vote-name
+{
+    width: 80%;
+    margin: 50px auto 10px auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+.list-label
+{
+    margin-left: 10%;
+    margin-top: 10px;
+    font-size: 23px;
+}
+
+.option
+{
+    width:15%;
+    height: 100%;
+    float: left;
+    border-right: 1px solid gainsboro;
+}
+
+.left-option
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+.left-button
+{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(226, 226, 226, 0.5);
+    padding: 8px 0;
+    margin: 2px 0;
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+} 
+
+
+.page
+{
+    width: 84%;
+    height: 100%;
+    float: left;
+}
+
+.info-div
+{
+    width: 90%;
+    height:200px;
+    margin: 0 auto;
+    position: relative;
+    top: 10%;
+}
+
+.list-div
+{
+    width: 80%;
+    height: 50px;
+    margin: 5px auto;
+    background-color: rgba(226, 226, 226, 0.5);
+    border-radius: 5px;
+}
+
+.label
+{
+    width: 25%;
+    height: 30px;
+    float: left;
+    text-align: center;
+    margin: 10px 0 10px 30px;
+}
+
+.input-textarea
+{
+    width: 60%;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+    padding-left: 1%;
+    border-radius: 5px;
+    border: 1px solid rgb(223, 221, 221);
+    font-size: 15px;
+    resize: none;
+    overflow: hidden;
+    outline: none;
+}
+
+.btnRegister-div
+{
+    width: 60%;
+    margin: 5%;
+    padding-left: 30%;
+}
+
+button
+{
+    box-sizing: inherit;
+    color: hsl(0, 0%, 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 10px;
+    margin: 0;
+    word-break: inherit;
+}
+
+
+.button-register
+{
+    width: 25%;
+    height: 30px;
+    float: left;
+    margin: 5px;
+    font-size: 13px;
+    background-color: rgba(129, 255, 117, 0.8);
+    border: .3px solid rgba(129, 255, 117, 0.8);
+}
+
+.btnOK-div
+{
+    width: 80%;
+    margin: 10%;
+}
+
+.btnRadio
+{
+    width: 60%;
+    height: 30px;
+    margin: 5px 20%;
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    outline: none;
+}
+
+.btnRadioClick
+{
+    width: 60%;
+    height: 30px;
+    margin: 5px 20%;
+    background-color: rgb(102, 156, 255);
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+.button-ok
+{
+    width: 150px;
+    height: 30px;
+    float: left;
+    margin-left: 40%;
+    background-color: rgba(129, 255, 117, 0.8);
+    border: .3px solid rgba(129, 255, 117, 0.8);
+}
+
+.tips-p
+{
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 10%;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+}

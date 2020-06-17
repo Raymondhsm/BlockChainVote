@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../CSS/addVote.css" type="text/css">
+    <script src="../JS/Utils.js"></script>
+    <script src="../JS/AddVote.js"></script>
+</head>
+<body>
+    <div class="option">
+        <ul>
+            <li><p class="option-text">创建投票</p></li>
+        </ul>
+    </div>
+    <div class="page">
+        <div class="info-div">
+            <div class="list-div">
+                <p class="label">投票选举名称：</p>
+                <input class="input-textarea" id="name" style="font-size: 15px;"></input>
+            </div>
+            <div class="list-div">
+                <p class="label">注册截止时间：</p>
+                <input type="datetime-local" class="input-textarea" id="rTime">
+            </div>
+            <div class="list-div">
+                <p class="label">投票开始时间：</p>
+                <input type="datetime-local" class="input-textarea" id="sTime">
+            </div>
+            <div class="list-div">
+                <p class="label">投票截止时间：</p>
+                <input type="datetime-local" class="input-textarea" id="eTime">
+            </div>
+            <div class="list-div">
+                <p class="label">类型：</p>
+                <button class="btnType-choose" name="btnType" onclick="ChooseType(0)" style="border-radius: 5px 0 0 5px;">私有</button>
+                <button class="btnType-default" name="btnType" onclick="ChooseType(1)" style="border-radius: 0 5px 5px 0;">公开</button>
+            </div>
+        </div>
+        <div class="result-div" id="result" style="display: none;">
+            <div class="list-div" style="margin-bottom: 0;border-radius: 5px 5px 0 0;">
+                <p class="label">投票索引号：</p>
+                <textarea class="input-textarea" id="voteIndex"></textarea>
+            </div>
+            <div class="list-div" style="margin-top: 0;border-radius: 0 0 5px 5px;">
+                <p class="label">投票地址：</p>
+                <textarea class="input-textarea" id="voteAddress"></textarea>
+            </div>
+        </div>
+        <div class="button-div">
+            <button class="button-ok" onclick="CreateVote()">创建</button>
+            <button class="button-reset" onclick="ResetInfo()">重置</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../CSS/attendVote.css" type="text/css">
+    <script src="../JS/Utils.js"></script>
+    <script src="../JS/AttendVote.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="option">
+        <ul class="left-option">
+            <li><button class="left-button" onclick="LeftOption(0)">加入投票</button></li>
+            <li><button class="left-button" onclick="LeftOption(1)">投票选举</button></li>
+        </ul>
+    </div>
+    <div class="search">
+        <select class="search-select" id="searchSelect" onchange="SearchBaseChange(this.selectedIndex)">
+            <option value="0">索引号</option>
+            <option value="1">地址</option>
+            <option value="2">名称</option>
+        </select>
+        <input class="textarea-search" placeholder="请输入投票索引号..." id="SearchText"></input>
+        <img src="../Image/search.png" class="img-search" onclick="Search()">
+    </div>
+    <div class="page" id="attendPage">
+        <div class="vote-info">
+            <p class="vote-name" name="voteName">投票名称</p>
+        </div>
+        <div class="info-div">
+            <div class="list-div">
+                <p class="label">姓名：</p>
+                <input class="input-textarea" id="voterName"></input>
+            </div>
+            <div class="list-div">
+                <p class="label">ID：</p>
+                <input class="input-textarea" id="voterID"></input>
+            </div>
+            <div class="list-div" id="registerAccount">
+                <p class="label">申请者账号：</p>
+                <input class="input-textarea" id="voterAccount" style="font-size:13px;"></input>
+            </div>
+        </div>
+        <div class="btnRegister-div">
+            <button class="button-register" onclick="Register(0)">申请为候选者</button>
+            <button class="button-register" onclick="Register(1)">申请为投票者</button>
+        </div>
+        <p class="tips-p" id="tipsCan"></p>
+        <p class="tips-p" id="tipsVoter"></p>
+    </div>
+    <div class="page" id="votePage" style="display: none;">
+        <div class="vote-info">
+            <p class="vote-name" name="voteName">投票名称</p>
+            <div id="radioDiv">
+            </div>
+        </div>
+        <div class="btnOK-div">
+            <button class="button-ok" onclick="Vote()">确定</button>
+        </div>
+    </div>
+</body>
+<script>
+    LeftOption(0);
+</script>
+</html>
